@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByeCar</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <header>
+        <img src="./logo.svg" alt="">
+        <h1>ByeCar</h1>
+   </header> 
+<section>
+    <div class="lado-esquerdo">
+        <p>Ter <b> uma moto </b> por assinatura nunca foi tão fácil!</p>
+        <img src="./ft1.png" alt="">
+    </div>
+     <div class="lado-direito">  
+                <p>Conheça nossas motos!</p>
+        <div class="container">
+            <button id="buta" onclick="next(-1)">
+                <img  src="./seta menor.svg" >
+            </button> 
+                <ul class="carrossel">
+                    <li class="moto1">
+                        <p>Scooter Elétrica Voltz EV1</p>
+                        <img src="./moto1.svg" height="282px" width="206px" alt="">
+                        <div>
+                            <p>A partir de</p>
+                            <p>R$ 619,90</p>
+                            <p>Plano de 30 meses</p>
+                        </div>
+                    </li>
+                    <li class="moto1">
+                        <p>Honda CB 500X</p>
+                        <img src="./moto2.svg" height="282px" width="206px" alt="">
+                        <div>
+                            <p>A partir de</p>
+                            <p>R$ 619,90</p>
+                            <p>Plano de 30 meses</p>
+                        </div>                
+                    </li>     
+                </ul>
+            <button id="butao" onclick="next(1)">
+                <img src="./seta maior.svg" alt="" >
+            </button>
+        </div>
+        <div class="boto"> 
+            <button id="ultimoBotao" onclick="saiba(0)">Saiba mais</button>
+        </div>
+        
+    </div>
+    
+
+</section>
+    <div class="modal" id="modal">
+
+        
+    </div>
+<script src="main.js" ></script>
+</body>
+
+</html>
